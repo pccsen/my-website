@@ -1,4 +1,4 @@
-# Shakhbat Nurbek - Portfolio Website
+# Shakkhat Nurbek - Portfolio Website
 
 A modern, minimalist portfolio website built with Next.js and TypeScript. Features a custom cursor, smooth animations, and a clean design inspired by modern portfolio sites.
 
