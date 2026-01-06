@@ -12,28 +12,44 @@ export default function CustomCursor() {
       setPosition({ x: e.clientX, y: e.clientY })
     }
 
-    const handleMouseEnter = (e: MouseEvent) => {
-      const target = e.target as HTMLElement
-      if (target.tagName === 'A' || target.tagName === 'BUTTON' || target.closest('a') || target.closest('button')) {
+    const handleMouseOver = (e: MouseEvent) => {
+      const target = e.target as HTMLElement | null
+      if (!target) return
+
+      const tagName = target.tagName?.toUpperCase()
+      
+      // Check if the element itself is interactive
+      if (tagName === 'A' || tagName === 'BUTTON') {
         setIsHovering(true)
+        return
       }
+
+      // Check parent elements
+      let element: HTMLElement | null = target
+      while (element && element !== document.body) {
+        const elTagName = element.tagName?.toUpperCase()
+        if (elTagName === 'A' || elTagName === 'BUTTON') {
+          setIsHovering(true)
+          return
+        }
+        element = element.parentElement
+      }
+      
+      setIsHovering(false)
     }
 
-    const handleMouseLeave = (e: MouseEvent) => {
-      const target = e.target as HTMLElement
-      if (target.tagName === 'A' || target.tagName === 'BUTTON' || target.closest('a') || target.closest('button')) {
-        setIsHovering(false)
-      }
+    const handleMouseOut = () => {
+      setIsHovering(false)
     }
 
     window.addEventListener('mousemove', updateCursor)
-    document.addEventListener('mouseenter', handleMouseEnter, true)
-    document.addEventListener('mouseleave', handleMouseLeave, true)
+    document.addEventListener('mouseover', handleMouseOver)
+    document.addEventListener('mouseout', handleMouseOut)
 
     return () => {
       window.removeEventListener('mousemove', updateCursor)
-      document.removeEventListener('mouseenter', handleMouseEnter, true)
-      document.removeEventListener('mouseleave', handleMouseLeave, true)
+      document.removeEventListener('mouseover', handleMouseOver)
+      document.removeEventListener('mouseout', handleMouseOut)
     }
   }, [])
 
