@@ -48,7 +48,7 @@ export default function About() {
         </div>
         <div className="about-stats fade-in">
           <div className="stat-item">
-            <div className="stat-number">1+</div>
+            <div className="stat-number">2+</div>
             <div className="stat-label">Years of Programming</div>
           </div>
           <div className="stat-item">
