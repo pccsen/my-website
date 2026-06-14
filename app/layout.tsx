@@ -3,8 +3,8 @@ import './globals.css'
 import CustomCursor from '@/components/CustomCursor'
 
 export const metadata: Metadata = {
-  title: 'Shakkhat Nurbek | DevOps Engineer & Python Developer',
-  description: 'DevOps Engineer and Python Backend Developer. Student at Satbayev University. Available for hire and freelance projects.',
+  title: 'Shakkhat Nurbek | DevOps Engineer ',
+  description: 'DevOps Engineer . Student at Satbayev University. Available for hire and freelance projects.',
 }
 
 export default function RootLayout({
