@@ -35,9 +35,7 @@ export default function Hero() {
           sen.
         </h1>
         <p className="fade-in hero-description" style={{ transitionDelay: '0.3s' }}>
-          A DevOps Engineer and Python Backend Developer. I build scalable infrastructure 
-          and robust APIs — merging automation, cloud technologies, and clean code to solve 
-          complex problems.
+          DevOps & Security Engineer building secure, scalable infrastructure - merging automation, cloud technologies, and information security best practices.
         </p>
         <div className="hero-cta fade-in" style={{ transitionDelay: '0.4s' }}>
           <a href="#contact" className="cta-button">Get In Touch</a>
