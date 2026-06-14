@@ -40,7 +40,7 @@ export default function Contact() {
             <div className="contact-icon">📧</div>
             <div>
               <h3>Email</h3>
-              <a href="mailto:your.email@example.com">shakkhatnurbek@gmail.com</a>
+              <a href="mailto:nshakkhat@gmail.com">nshakkhat@gmail.com</a>
             </div>
           </div>
           <div className="contact-item">
