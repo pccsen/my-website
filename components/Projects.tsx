@@ -5,24 +5,48 @@ import './Projects.css'
 
 const projects = [
   {
-    title: 'Infrastructure Automation',
-    description: 'Automated deployment pipeline with CI/CD integration, containerization, and cloud infrastructure setup.',
-    tech: ['Python', 'Docker', 'CI/CD', 'AWS'],
-    status: 'In Progress',
+    title: 'TCP Load Balancer',
+    description: 'High-performance TCP proxy with WebSocket support, health checks, and Prometheus metrics. Handles 15k req/s.',
+    tech: ['Go', 'gorilla/websocket', 'Prometheus', 'Docker'],
+    status: 'Completed',
+    link: 'https://github.com/pccsen/GO-tcp-load-balancer',
   },
   {
-    title: 'RESTful API Service',
-    description: 'High-performance backend API built with FastAPI, featuring authentication, database integration, and comprehensive documentation.',
+    title: 'gRPC Auth Service',
+    description: 'Secure authentication service with JWT, rate limiting, Redis sessions, and graceful shutdown.',
+    tech: ['Go', 'gRPC', 'Redis', 'JWT', 'PostgreSQL'],
+    status: 'Completed',
+    link: 'https://github.com/pccsen/auth-service',
+  },
+  {
+    title: 'URL Shortener API',
+    description: 'RESTful URL shortening service with FastAPI, PostgreSQL, and Docker containerization.',
     tech: ['Python', 'FastAPI', 'PostgreSQL', 'Docker'],
     status: 'Completed',
+    link: 'https://github.com/pccsen/url_shortener_product',
   },
   {
-    title: 'DevOps Monitoring Dashboard',
-    description: 'Real-time monitoring solution for infrastructure metrics, logs, and system health visualization.',
-    tech: ['Python', 'Grafana', 'APIs', 'WebSockets'],
-    status: 'Coming Soon',
+    title: 'Server Performance Stats',
+    description: 'Linux server performance monitoring script with real-time metrics collection and reporting.',
+    tech: ['Shell', 'Linux', 'Performance'],
+    status: 'Completed',
+    link: 'https://github.com/pccsen/server-performance-stats',
   },
-]
+  {
+    title: 'Nginx Log Analyzer',
+    description: 'Log analysis tool for Nginx with pattern detection and anomaly reporting.',
+    tech: ['Shell', 'Nginx', 'Log Analysis'],
+    status: 'Completed',
+    link: 'https://github.com/pccsen/nginx-log-analyzer',
+  },
+  {
+  title: 'SwiftUI Fitness Tracker',
+  description: 'Native iOS app with HealthKit integration, custom charts, and offline-first Core Data storage.',
+  tech: ['Swift', 'SwiftUI', 'HealthKit', 'Core Data'],
+  status: 'In Progress',
+  link: 'https://github.com/pccsen/fitness-tracker',
+  },
+];
 
 export default function Projects() {
   const projectsRef = useRef<HTMLElement | null>(null)
