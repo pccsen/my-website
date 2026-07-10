@@ -32,27 +32,27 @@ export default function About() {
       <div className="about-content">
         <div className="about-text fade-in">
           <p>
-            I'm Shakkhat Nurbek a 3rd-year student at Satbayev University, majoring in 
-            Information Security. My passion for programming started in school and has 
-            evolved into a deep interest in DevOps practices and backend development.
+            I'm Shakkhat Nurbek - a DevOps & iOS Engineer. I design and maintain 
+            secure, scalable cloud infrastructure and build high-quality native 
+            iOS applications.
           </p>
           <p>
-            I'm focused on building reliable, scalable infrastructure and writing clean, 
-            efficient Python code. I believe in automation, continuous improvement, and 
-            solving real problems with elegant solutions.
+            With a background in Information Security (Satbayev University, 4th year), 
+            I combine deep technical knowledge with a passion for automation and 
+            clean code. My toolkit includes Kubernetes, Docker, Swift, and Python. 
           </p>
           <p>
-            Currently available for full-time positions and freelance projects. I'm always 
-            open to new opportunities and exciting challenges in the tech industry.
+            I'm looking for full-time positions and freelance projects where I can 
+            deliver real value and grow as an engineer.
           </p>
         </div>
         <div className="about-stats fade-in">
           <div className="stat-item">
-            <div className="stat-number">2+</div>
+            <div className="stat-number">1+</div>
             <div className="stat-label">Years of Programming</div>
           </div>
           <div className="stat-item">
-            <div className="stat-number">3rd</div>
+            <div className="stat-number">4th</div>
             <div className="stat-label">Year Student</div>
           </div>
           <div className="stat-item">
