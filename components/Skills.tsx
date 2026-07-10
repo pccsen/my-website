@@ -5,80 +5,33 @@ import './Skills.css'
 
 const skills = [
   {
-    category: 'DevOps & Infrastructure',
+    category: '☁️ DevOps & Cloud',
     items: [
-      'Docker & Containerization',
-      'Kubernetes (K8s)',
-      'Helm Charts',
-      'Linux Server Administration (Ubuntu)',
-      'Nginx (Reverse Proxy & Ingress)',
-      'Infrastructure as Code (Terraform)',
-    ],
-  },
-  {
-    category: 'CI/CD & Automation',
-    items: [
-      'GitLab CI/CD',
-      'GitHub Actions',
-      'ArgoCD',
-      'Bash Scripting',
-      'Automation',
-    ],
-  },
-  {
-    category: 'Backend Development',
-    items: [
-      'Python (FastAPI, Django, Flask)',
-      'RESTful APIs',
-      'gRPC',
-      'PostgreSQL',
-      'Redis',
-      'MongoDB',
-    ],
-  },
-  {
-    category: 'Monitoring & Logging',
-    items: [
-      'Prometheus',
-      'Grafana',
-      'OpenTelemetry',
-      'Wazuh (SIEM)',
-      'Kibana',
-    ],
-  },
-  {
-    category: 'Security (DevSecOps)',
-    items: [
-      'SAST (Static Analysis)',
-      'DAST (Dynamic Analysis)',
-      'Defect Dojo',
-      'Derscan',
-      'Pre-commit Hooks',
-      'Trivy (Vulnerability Scanning)',
-      'HashiCorp Vault',
-      'RBAC',
-      'Firewall Configuration',
-      'Security Alerts Analysis',
-    ],
-  },
-  {
-    category: 'Testing & Load',
-    items: [
-      'Locust (Load Testing)',
-      'pytest',
-      'unittest',
-    ],
-  },
-  {
-    category: 'Version Control & Docs',
-    items: [
+      'Kubernetes',
+      'Docker',
+      'Nginx',
+      'Helm',
+      'AWS/Yandex.cloud',
+      'Terraform/Ansible',
+      'CI/CD (GitLab CI/GitHub Actions)',
       'Git',
-      'GitHub',
-      'Technical Documentation',
-      'Confluence',
     ],
   },
-]
+  {
+    category: '📱 iOS Development',
+    items: [
+      'Swift',
+      'SwiftUI',
+      'UIKit',
+      'Xcode',
+      'RESTful APIs',
+      'Core Data/SwiftData',
+      'MVVM',
+      'Unit Testing',
+      'Git',
+    ],
+  },
+];
 
 export default function Skills() {
   const skillsRef = useRef<HTMLElement | null>(null)
